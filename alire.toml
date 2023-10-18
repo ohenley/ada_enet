@@ -9,5 +9,5 @@ maintainers-logins = ["ohenley"]
 [[depends-on]]
 stm32_hal = "0.1.0-dev"
 
-#[configuration.values]
-#cortex_m.core = "m7f"
+[configuration.values]
+cortex_m.core = "m7f"
