@@ -1,8 +1,9 @@
 with "config/ada_enet_config.gpr";
+with "config/stm32_hal_config.gpr";
 project Ada_Enet is
 
    for Target use "arm-eabi";
-   for Runtime ("Ada") use "light-tasking-stm32f746disco";
+   for Runtime ("Ada") use "light-tasking-" & stm32_hal_config.DEVICE & "disco";
 
    for Library_Name use "Ada_Enet";
    for Library_Version use Project'Library_Name & ".so." & Ada_Enet_Config.Crate_Version;

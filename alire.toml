@@ -7,4 +7,7 @@ maintainers = ["Olivier Henley <olivier.henley@gmail.com>"]
 maintainers-logins = ["ohenley"]
 
 [[depends-on]]
-stm32_devices = "0.1.0-dev"
+stm32_hal = "0.1.0-dev"
+
+#[configuration.values]
+#cortex_m.core = "m7f"
